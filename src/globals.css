@@ -1,0 +1,59 @@
+@tailwind base;
+
+@layer base {
+    body {
+        @apply bg-white;
+    }
+    p {
+        @apply max-w-3xl mx-auto px-4 mb-2 mt-4 text-black;
+    }
+    strong {
+        @apply font-semibold text-black;
+    }
+    a {
+        @apply transition-colors text-gray-800 underline hover:text-blue-500;
+    }
+    ul {
+        @apply max-w-3xl mx-auto px-4 list-inside list-disc;
+    }
+    ol {
+        @apply max-w-3xl mx-auto px-4 list-inside list-decimal;
+    }
+    li {
+        @apply max-w-3xl mx-auto mb-2 text-black;
+    }
+    h1 {
+        @apply max-w-3xl mx-auto px-4 mb-8 font-bold text-black text-3xl;
+    }
+    h2 {
+        @apply max-w-3xl mx-auto px-4 text-2xl font-semibold mt-9 mb-6 text-black;
+    }
+    h3 {
+        @apply max-w-3xl mx-auto px-4 text-xl font-semibold mt-9 mb-6 text-black;
+    }
+    h4 {
+        @apply max-w-3xl mx-auto px-4 text-base font-bold uppercase mt-9 mb-4 text-black;
+    }
+    blockquote {
+        @apply max-w-3xl mx-auto mt-4 mb-2 p-4 pl-6 bg-gray-100 border-l-2 border-gray-600;
+    }
+    blockquote p {
+        @apply m-0 p-0 text-gray-600;
+    }
+    hr {
+        @apply my-4 max-w-3xl mx-auto;
+    }
+    pre {
+        @apply relative max-w-3xl mx-auto my-4 px-6 py-4 rounded-md text-sm;
+    }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+li p {
+    @apply m-0 p-0 inline-block;
+}
+li::marker {
+    @apply mr-2;
+}
