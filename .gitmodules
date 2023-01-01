@@ -1,0 +1,3 @@
+[submodule "src/pages/p"]
+	path = src/pages/p
+	url = git@github.com:AchrafAsh/obsidian.git
